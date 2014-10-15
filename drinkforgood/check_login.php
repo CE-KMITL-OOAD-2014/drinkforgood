@@ -24,6 +24,7 @@
 				$_SESSION["sex"] = $objResult["sex"];
 				$_SESSION["height"] = $objResult["height"];
 				$_SESSION["weight"] = $objResult["weight"];
+				//echo $_SESSION["UserName"].$_SESSION["height"];
 				session_write_close();
 				header("location:main_page.php");
 		}
