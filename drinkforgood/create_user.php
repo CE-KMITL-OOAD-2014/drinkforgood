@@ -3,7 +3,8 @@
 	if (isset($_POST['checkname']))
 	{
 		session_start();
-		mysql_connect("103.253.73.86","admin","A4m1n");
+		mysql_connect("localhost","admin","A4m1n");
+		//mysql_connect("103.253.73.86","admin","A4m1n");
 		mysql_select_db("drinkwater");
 		$strSQL = "SELECT * FROM user WHERE UserName = '".mysql_real_escape_string($_POST['txtUsername'])."'";
 		
@@ -74,7 +75,7 @@
 			$sexChoose = "F";
 		}
 
-		mysql_connect("103.253.73.86","admin","A4m1n");
+		mysql_connect("localhost","admin","A4m1n");
 		mysql_select_db("drinkwater");
 		$strSQL = "SELECT * FROM user WHERE UserName = '".trim($_POST['txtUsername'])."' ";
 		$objQuery = mysql_query($strSQL);

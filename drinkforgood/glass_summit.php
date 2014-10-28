@@ -18,7 +18,8 @@
 		}	
 
 		session_start();
-		mysql_connect("103.253.73.86","admin","A4m1n");
+		mysql_connect("localhost","admin","A4m1n");
+		//mysql_connect("103.253.73.86","admin","A4m1n");
 		mysql_select_db("drinkwater");
 		$strSQL = "SELECT * FROM user WHERE UserName = '".mysql_real_escape_string($_SESSION["UserName"])."'";
 		$objQuery = mysql_query($strSQL);
@@ -37,7 +38,7 @@
 		echo $strSQL;
 		$objQuery = mysql_query($strSQL);
 		echo "summit Completed!<br>";		
-		echo "<br> Go to <a href='record_drink_page.php'>record page</a>";
+		echo "<br> Go to <a href='content/drinkforgood.php#content/record_drink_page.php'>record page</a>";
 		mysql_close();
 	}
 ?>

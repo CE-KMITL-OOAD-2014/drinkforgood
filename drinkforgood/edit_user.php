@@ -22,7 +22,8 @@
 			exit();
 		}	
 		session_start();
-		mysql_connect("103.253.73.86","admin","A4m1n");
+		mysql_connect("localhost","admin","A4m1n");
+		//mysql_connect("103.253.73.86","admin","A4m1n");
 		mysql_select_db("drinkwater");
 		$strSQL = "SELECT * FROM user WHERE UserName = '".mysql_real_escape_string($_SESSION["UserName"])."'";
 		$objQuery = mysql_query($strSQL);
@@ -41,7 +42,7 @@
 		$strSQL = "update user set  UserEmail ='".$_POST["txtEmail"]."', weight ='".$_POST["txtWeight"]."', height ='".$_POST["txtHeight"]."' where  ID = '".mysql_real_escape_string($idSearch)."'";
 		$objQuery = mysql_query($strSQL);
 		echo "Edit Completed!<br>";		
-		echo "<br> Go to <a href='main_page.php'>main page</a>";
+		echo "<br> Go to <a href='drinkforgood.php#content/main_page.php'>main page</a>";
 		mysql_close();
 	}
 ?>
