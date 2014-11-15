@@ -31,7 +31,7 @@ $db->initMySQL();
 		</div>
 		<form>
 			<select name="users" onchange="showUser(this.value)">
-			<option value="">Select a person:</option>
+			<option value="">Select a month:</option>
 			<option value="1" id="January">January</option>
 			<option value="2">February</option>
 			<option value="3">March</option>

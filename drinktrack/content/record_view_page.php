@@ -31,7 +31,8 @@
 	?>
 	<table width="600" border="1">
 	  <tr>
-		<th width="60"> <div align="center">ID </div></th>
+	<!--	<th width="60"> <div align="center">ID </div></th>
+	-->
 		<th width="70"> <div align="center">size </div></th>
 		<th width="100"> <div align="center">createDate </div></th>
 	  </tr>
@@ -40,7 +41,8 @@
 	{
 	?>
 	  <tr>
-		<td><div align="center"><?php echo $objResult["id"];?></div></td>
+		<!--	<td><div align="center"><?php echo $objResult["id"];?></div></td>
+		-->
 		<td><div align="center"><?php echo $objResult["size"];?></td>
 		<td><div align="center"><?php echo $objResult["createDate"];?></td>
 	  </tr>

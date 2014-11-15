@@ -36,7 +36,8 @@ $db->initMySQL();
 	?>
 	<table width="600" border="1">
 	  <tr>
-		<th width="60"> <div align="center">ID </div></th>
+	<!--	<th width="60"> <div align="center">ID </div></th>
+	-->
 		<th width="70"> <div align="center">name </div></th>
 		<th width="50"> <div align="center">size </div></th>
 	  </tr>
@@ -45,7 +46,7 @@ $db->initMySQL();
 	{
 	?>
 	  <tr>
-		<td><div align="center"><?php echo $objResult["id"];?></div></td>
+	<!--	<td><div align="center"><?php echo $objResult["id"];?></div></td> -->
 		<td><div align="center"><?php echo $objResult["name"];?></td>
 		<td><div align="center"><?php echo $objResult["size"];?></td>
 	  </tr>
